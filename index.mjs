@@ -70,5 +70,15 @@ client.on('messageCreate', message => {
           message.reply('Damn what are you doing with all that ass :sob:')
         }
     }
+
+    
+    else if (message.author.id == 251180212681703436) {
+      num = Math.random();
+      console.log(num);
+        if (num < 0.1) {
+          //message.reply('<:BE_Andrew:954356976320651274>')
+          message.react('954356976320651274')
+        }
+    }
 });
 
