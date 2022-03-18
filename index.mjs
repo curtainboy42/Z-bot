@@ -59,7 +59,7 @@ client.on('messageCreate', message => {
       num = Math.random();
       console.log(num);
         if (num < 0.1) {
-          message.reply('One of these days you\'re going to have to tell me how you achieve all those A* grades, Belle.')
+          message.reply('One of these days you\'re going to have to tell me how you managed to get all those A* grades, Belle.')
         }
     }
 });
