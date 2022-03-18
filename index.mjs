@@ -34,14 +34,14 @@ client.on('messageCreate', message => {
     else if (message.content.toLowerCase() === 'belle') {
       var num = Math.random();
       console.log(num)
-        if (num > 0.3) {
+        if (num > 0.5) {
           message.reply('https://media.discordapp.net/attachments/948493845950263307/954367048090259456/3D258F22-A305-4BA6-A7D4-9FC11D3A9C47.jpg?width=507&height=676')
         }
-        else if (num > 0.3 && num < 0.6) {
-          message.reply('https://cdn.discordapp.com/attachments/948493845950263307/954369399161258004/IMG_5956.png')
-        }
+        //else if (num > 0.3 && num < 0.6) {
+          //message.reply('https://cdn.discordapp.com/attachments/948493845950263307/954369399161258004/IMG_5956.png')
+        //}
 
-        else if (num < 0.3) {
+        else if (num < 0.5) {
           message.reply('https://cdn.discordapp.com/attachments/948493845950263307/954369611195891722/395999F9-9C56-4BED-AEF8-5F077DA30B55.jpg')
         }
         else {
