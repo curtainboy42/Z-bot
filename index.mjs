@@ -55,11 +55,19 @@ client.on('messageCreate', message => {
       message.reply('You mean the Korean whisperer?')
     }
 
-    else if (message.author.id == 260394253505527809) {
+    else if (message.author.id == 275065878880583680) {
       num = Math.random();
       console.log(num);
         if (num < 0.1) {
           message.reply('One of these days you\'re going to have to tell me how you managed to get all those A* grades, Belle.')
+        }
+    }
+
+    else if (message.author.id == 383822595755343872) {
+      num = Math.random();
+      console.log(num);
+        if (num < 0.05) {
+          message.reply('Damn what are you doing with all that ass :sob:')
         }
     }
 });
