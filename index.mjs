@@ -76,8 +76,8 @@ client.on('messageCreate', message => {
       num = Math.random();
       console.log(num);
         if (num < 0.1) {
-          //message.reply('<:BE_Andrew:954356976320651274>')
-          message.react('954356976320651274')
+          message.reply('Good one, Andrew <:BE_Andrew:954356976320651274>')
+          //message.react('954356976320651274')
         }
     }
 });
