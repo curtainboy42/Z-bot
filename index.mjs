@@ -72,7 +72,7 @@ client.on('messageCreate', message => {
     else if (message.author.id == 275065878880583680) {
       num = Math.random();
       console.log(num);
-        if (num < 0.05) {
+        if (num < 0.01) {
           message.reply('One of these days you\'re going to have to tell me how you managed to get all those A* grades, Belle.')
         }
     }
@@ -80,7 +80,7 @@ client.on('messageCreate', message => {
     else if (message.author.id == 383822595755343872) {
       num = Math.random();
       console.log(num);
-        if (num < 0.05) {
+        if (num < 0.01) {
           message.reply('Damn what are you doing with all that ass :sob:')
         }
     }
@@ -89,7 +89,7 @@ client.on('messageCreate', message => {
     else if (message.author.id == 251180212681703436) {
       num = Math.random();
       console.log(num);
-        if (num < 0.5) {
+        if (num < 0.01) {
           message.reply('Good one, Andrew <:BE_Andrew:954356976320651274>')
           //message.react('954356976320651274')
         }
