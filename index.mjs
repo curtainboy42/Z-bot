@@ -65,10 +65,14 @@ client.on('messageCreate', message => {
       message.reply('You mean the Korean whisperer?')
     }
 
+    else if (message.content.toLowerCase() === 'zach') {
+      message.reply('https://cdn.discordapp.com/attachments/912553636079489024/950031283684274206/Screen_Shot_2022-03-07_at_03.05.04.png')
+    }
+
     else if (message.author.id == 275065878880583680) {
       num = Math.random();
       console.log(num);
-        if (num < 0.1) {
+        if (num < 0.05) {
           message.reply('One of these days you\'re going to have to tell me how you managed to get all those A* grades, Belle.')
         }
     }
@@ -85,7 +89,7 @@ client.on('messageCreate', message => {
     else if (message.author.id == 251180212681703436) {
       num = Math.random();
       console.log(num);
-        if (num < 0.1) {
+        if (num < 0.5) {
           message.reply('Good one, Andrew <:BE_Andrew:954356976320651274>')
           //message.react('954356976320651274')
         }
@@ -94,7 +98,7 @@ client.on('messageCreate', message => {
     else if (message.author.id == 260394253505527809) {
       num = Math.random();
       console.log(num);
-        if (num < 0.05) {
+        if (num < 0.01) {
           message.reply('Nice one, Zach <:BE_Zach:950707702013763594>')
         }
     }
