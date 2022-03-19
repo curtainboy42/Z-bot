@@ -31,6 +31,16 @@ client.on('messageCreate', message => {
       message.reply('https://cdn.discordapp.com/attachments/912553636079489024/954354656191082506/unknown.png');
     }
 
+    else if (message.content.toLowerCase() === 'mako') {
+      var num = Math.random();
+      console.log(num);
+        if (num > 0.5) {
+          message.reply('https://cdn.discordapp.com/attachments/948855968211558410/954527705557254254/271244320_1023165181595457_4180166898758729721_n.jpg')
+        }
+        else if (num < 0.5) {
+          message.reply('https://cdn.discordapp.com/attachments/948855968211558410/954527954992513104/unknown.png')
+        }
+      }
     else if (message.content.toLowerCase() === 'belle') {
       var num = Math.random();
       console.log(num);
@@ -78,6 +88,14 @@ client.on('messageCreate', message => {
         if (num < 0.1) {
           message.reply('Good one, Andrew <:BE_Andrew:954356976320651274>')
           //message.react('954356976320651274')
+        }
+    }
+
+    else if (message.author.id == 260394253505527809) {
+      num = Math.random();
+      console.log(num);
+        if (num < 0.05) {
+          message.reply('Nice one, Zach <:BE_Zach:950707702013763594>')
         }
     }
 });
