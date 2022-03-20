@@ -28,7 +28,14 @@ client.on('messageCreate', message => {
     }
 
     else if (message.content.toLowerCase() === 'scarlet') {
-      message.reply('https://cdn.discordapp.com/attachments/912553636079489024/954354656191082506/unknown.png');
+      num = Math.random();
+      console.log(num);
+        if (num > 0.5) {
+          message.reply('https://cdn.discordapp.com/attachments/338668921022316544/778787103495421962/xMPkg06.gif')
+        }
+        else if (num < 0.5) {
+          message.reply('https://cdn.discordapp.com/attachments/912553636079489024/954354656191082506/unknown.png');
+        }
     }
 
     else if (message.content.toLowerCase() === 'mako') {
@@ -65,7 +72,7 @@ client.on('messageCreate', message => {
       message.reply('You mean the Korean whisperer?')
     }
 
-    else if (message.content.toLowerCase() === 'zach') {
+    else if (message.content.toLowerCase() === 'zach11') {
       message.reply('https://cdn.discordapp.com/attachments/912553636079489024/950031283684274206/Screen_Shot_2022-03-07_at_03.05.04.png')
     }
 
