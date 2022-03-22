@@ -27,6 +27,10 @@ client.on('messageCreate', message => {
       message.reply('*Varsh didn\'t like that*');
     }
 
+    else if (message.content.toLowerCase() === 'kate edgar') {
+      message.reply('You mean Korea town?');
+    }
+
     else if (message.content.toLowerCase() === 'scarlet') {
       num = Math.random();
       console.log(num);
@@ -48,7 +52,7 @@ client.on('messageCreate', message => {
           message.reply('https://cdn.discordapp.com/attachments/948855968211558410/954527954992513104/unknown.png')
         }
       }
-    else if (message.content.toLowerCase() === 'belle') {
+      if (message.content.toLowerCase() === 'get belle\'d') {
       var num = Math.random();
       console.log(num);
         if (num > 0.5) {
@@ -67,7 +71,6 @@ client.on('messageCreate', message => {
           return;
         }
     }
-
     else if (message.content.toLowerCase() === 'varsh') {
       message.reply('You mean the Korean whisperer?')
     }
