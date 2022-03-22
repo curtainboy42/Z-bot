@@ -31,7 +31,6 @@ client.on('messageCreate', message => {
   if (!message.author.bot) {
     var msg = message.content.toLowerCase();
     var author = message.author.id
-    console.log(author)
     switch (msg) {
 
       case 'a* belle':
