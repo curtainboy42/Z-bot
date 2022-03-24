@@ -36,6 +36,7 @@ client.on('messageCreate', message => {
       case 'a* belle':
       case 'gay star belle':
       case 'belle':
+      case 'prep school belle':
         var num = randomInt(1,2);
         console.log(num);
           if (num == 1) {
@@ -49,7 +50,12 @@ client.on('messageCreate', message => {
       case 'korea':
         message.reply('*Varsh didn\'t like that*');
         break;
+      
+      case 'hanyi':
+        message.reply('https://www.cosgroves.com/resources/images/project/5a83b7fb56c90.jpeg');
+        break;
 
+      case 'kate edger':
       case 'kate edgar':
         message.reply('You mean Korea town?');
         break;
@@ -66,7 +72,14 @@ client.on('messageCreate', message => {
         break;
       
       case 'varsh':
+        var num = randomInt(1,2);
+        console.log(num);
+          if (num == 1) {
         message.reply('You mean the Korean whisperer?')
+          }
+          else if (num == 2) {
+            message.reply('https://cdn.discordapp.com/attachments/912553636079489024/956137645682073621/unknown.png')
+          }
         break;
 
       case 'mako':
