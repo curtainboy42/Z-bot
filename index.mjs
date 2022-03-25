@@ -1,6 +1,7 @@
 console.log("NodeJS Version: " + process.version)
 
 import DiscordJS, { Client, Intents } from 'discord.js'
+import fs, { writeFile } from 'fs'
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -22,10 +23,11 @@ const catchErr = err => {
   console.log(err)
 }
 
+const prefix = '%';
+
 function randomInt(min, max) { // min and max included 
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
-
 
 client.on('messageCreate', message => {
   if (!message.author.bot) {
@@ -47,10 +49,19 @@ client.on('messageCreate', message => {
           }
         break;
 
+      case 'belle curve':
+        //message.reply('https://cdn.discordapp.com/attachments/912553636079489024/956885208005767229/Screen_Shot_2022-03-26_at_01.00.06.png')
+        message.reply('https://cdn.discordapp.com/attachments/912553636079489024/956885665394610196/unknown.png')
+        break;
+
       case 'korea':
         message.reply('*Varsh didn\'t like that*');
         break;
       
+      case 'dank':
+        message.reply('https://cdn.discordapp.com/attachments/867623156800684035/956888725458124820/Screenshot_1.png')
+        break;
+
       case 'hanyi':
         message.reply('https://www.cosgroves.com/resources/images/project/5a83b7fb56c90.jpeg');
         break;
@@ -93,9 +104,17 @@ client.on('messageCreate', message => {
           }
         break;
 
-      case 'zach11':
-        message.reply('https://cdn.discordapp.com/attachments/912553636079489024/950031283684274206/Screen_Shot_2022-03-07_at_03.05.04.png')
+      case 'zach1':
+        var num = randomInt(1,2);
+        console.log(num);
+          if (num == 1) {
+            message.reply('https://cdn.discordapp.com/attachments/912553636079489024/950031283684274206/Screen_Shot_2022-03-07_at_03.05.04.png')
+            }
+          else if (num == 2) {
+            message.reply('https://cdn.discordapp.com/attachments/912553636079489024/956888729690198067/unknown.png')
+            }
         break;
+      
     }
     switch (author) {
       case '260394253505527809':
@@ -133,5 +152,32 @@ client.on('messageCreate', message => {
   }
   else {
     return;
+  }
+});
+
+client.on('messageCreate', message => {
+  if(message.author.bot || !message.content.startsWith(prefix)) {
+    return;
+  }
+
+  const args = message.content.slice(prefix.length).split(/ %/);
+  const command = args.shift().toLowerCase();
+
+  if(command === 'test'){
+    var person = message.author.id;
+    var a = randomInt(1,4)
+    var b = randomInt(1,4)
+    var c = randomInt(1,4)
+    var d = randomInt(1,4)
+    console.log(a.toString() + ' ' + b.toString() + ' ' + c.toString() + ' ' + d.toString() );
+    if (a == b == c == d)  {
+      message.channel.send('Type 1')
+    }
+    else if (a == b == c || a == c == d || a == b == d || b == c == d) {
+      message.channel.send('Type 2')
+    }
+    else {
+      message.channel.send('Type 7')
+    }
   }
 });
