@@ -39,6 +39,7 @@ client.on('messageCreate', message => {
       case 'gay star belle':
       case 'belle':
       case 'prep school belle':
+      case 'npc belle':
         var num = randomInt(1,2);
         console.log(num);
           if (num == 1) {
@@ -59,26 +60,55 @@ client.on('messageCreate', message => {
         break;
       
       case 'dank':
-        message.reply('https://cdn.discordapp.com/attachments/867623156800684035/956888725458124820/Screenshot_1.png')
+        var num = randomInt(1,3);
+        if (num == 1) {
+          message.reply('https://cdn.discordapp.com/attachments/867623156800684035/956888725458124820/Screenshot_1.png')
+        } 
+        else if (num == 2) {
+          message.reply('https://media.discordapp.net/attachments/912553636079489024/957256313358913556/unknown.png')
+        }
+        else if (num == 3) {
+          message.reply('https://media.discordapp.net/attachments/912553636079489024/957283531288092772/unknown.png')
+        }
         break;
 
       case 'hanyi':
-        message.reply('https://www.cosgroves.com/resources/images/project/5a83b7fb56c90.jpeg');
+        var num = randomInt(1,3);
+        if (num == 1) {
+          message.reply('https://www.cosgroves.com/resources/images/project/5a83b7fb56c90.jpeg');
+        }
+        else if (num == 2) {
+          message.reply('https://cdn.discordapp.com/attachments/902345458393944065/957235061181284412/unknown.png')
+        }
+        else if (num == 3) {
+          message.reply('https://media.discordapp.net/attachments/912553636079489024/957253833078243368/Screen_Shot_2022-03-27_at_01.24.55.png')
+        }
         break;
 
       case 'kate edger':
       case 'kate edgar':
         message.reply('You mean Korea town?');
         break;
+      
+      case 'andrew':
+        message.reply('https://media.discordapp.net/attachments/912553636079489024/952152041663373342/Screen_Shot_2022-03-12_at_23.32.12.png')
+        break;
+
+      case 'ash':
+        message.reply('https://cdn.discordapp.com/attachments/912553636079489024/957199411707015168/unknown.png');
+        break;
 
       case 'scarlet':
-        var num = randomInt(1,2);
+        var num = randomInt(1,3);
         console.log(num);
           if (num == 1) {
             message.reply('https://cdn.discordapp.com/attachments/338668921022316544/778787103495421962/xMPkg06.gif')
           }
           else if (num == 2) {
             message.reply('https://cdn.discordapp.com/attachments/912553636079489024/954354656191082506/unknown.png');
+          }
+          else if (num == 3) {
+            message.reply('https://cdn.discordapp.com/attachments/902345458393944065/957234266255802428/unknown.png')
           }
         break;
       
