@@ -98,6 +98,10 @@ client.on('messageCreate', message => {
         message.reply('https://cdn.discordapp.com/attachments/912553636079489024/957199411707015168/unknown.png');
         break;
 
+      case 'scarlet bet':
+        message.reply('https://cdn.discordapp.com/attachments/902345458393944065/957291755768791081/unknown.png');
+        break;
+
       case 'scarlet':
         var num = randomInt(1,3);
         console.log(num);
