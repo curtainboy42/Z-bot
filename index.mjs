@@ -71,6 +71,16 @@ client.on('messageCreate', message => {
           message.reply('https://media.discordapp.net/attachments/912553636079489024/957283531288092772/unknown.png')
         }
         break;
+      
+      case 'kia':
+        var num = randomInt(1,2)
+        if (num == 1) {
+          message.reply('https://cdn.discordapp.com/attachments/902345458393944065/957586958165618688/unknown.png')
+        }
+        else if (num == 2) {
+          message.reply('https://cdn.discordapp.com/attachments/902345458393944065/957608618457452554/unknown.png')
+        }
+        break;
 
       case 'hanyi':
         var num = randomInt(1,3);
@@ -80,8 +90,11 @@ client.on('messageCreate', message => {
         else if (num == 2) {
           message.reply('https://cdn.discordapp.com/attachments/902345458393944065/957235061181284412/unknown.png')
         }
+        //else if (num == 3) {
+          //message.reply('https://media.discordapp.net/attachments/912553636079489024/957253833078243368/Screen_Shot_2022-03-27_at_01.24.55.png')
+        //}
         else if (num == 3) {
-          message.reply('https://media.discordapp.net/attachments/912553636079489024/957253833078243368/Screen_Shot_2022-03-27_at_01.24.55.png')
+          message.reply('https://media.discordapp.net/attachments/902345458393944065/957480353013047336/unknown.png')
         }
         break;
 
