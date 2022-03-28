@@ -59,8 +59,12 @@ client.on('messageCreate', message => {
         message.reply('*Varsh didn\'t like that*');
         break;
       
+      case 'jason':
+        message.reply('https://media.discordapp.net/attachments/946333875632758785/956328045692719114/unknown.png')
+        break;
+
       case 'dank':
-        var num = randomInt(1,3);
+        var num = randomInt(1,5);
         if (num == 1) {
           message.reply('https://cdn.discordapp.com/attachments/867623156800684035/956888725458124820/Screenshot_1.png')
         } 
@@ -69,6 +73,12 @@ client.on('messageCreate', message => {
         }
         else if (num == 3) {
           message.reply('https://media.discordapp.net/attachments/912553636079489024/957283531288092772/unknown.png')
+        }
+        else if (num == 4) {
+          message.reply('https://cdn.discordapp.com/attachments/912553636079489024/957977308793294858/unknown.png')
+        }
+        else if (num == 5) {
+          message.reply('https://media.discordapp.net/attachments/912553636079489024/957977952442789958/unknown.png')
         }
         break;
       
