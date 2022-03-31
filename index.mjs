@@ -93,7 +93,7 @@ client.on('messageCreate', message => {
         break;
 
       case 'hanyi':
-        var num = randomInt(1,3);
+        var num = randomInt(1,4);
         if (num == 1) {
           message.reply('https://www.cosgroves.com/resources/images/project/5a83b7fb56c90.jpeg');
         }
@@ -105,6 +105,9 @@ client.on('messageCreate', message => {
         //}
         else if (num == 3) {
           message.reply('https://media.discordapp.net/attachments/902345458393944065/957480353013047336/unknown.png')
+        }
+        else if (num == 4) {
+          message.reply('https://cdn.discordapp.com/attachments/912553636079489024/958332238884372542/unknown.png')
         }
         break;
 
@@ -166,7 +169,7 @@ client.on('messageCreate', message => {
         break;
 
       case 'zach1':
-        var num = randomInt(1,2);
+        var num = randomInt(1,4);
         console.log(num);
           if (num == 1) {
             message.reply('https://cdn.discordapp.com/attachments/912553636079489024/950031283684274206/Screen_Shot_2022-03-07_at_03.05.04.png')
@@ -174,6 +177,12 @@ client.on('messageCreate', message => {
           else if (num == 2) {
             message.reply('https://cdn.discordapp.com/attachments/912553636079489024/956888729690198067/unknown.png')
             }
+          else if (num == 3) {
+            message.reply('https://media.discordapp.net/attachments/912553636079489024/958289243745189888/catboyzach.png?width=676&height=676')
+          }
+          else if (num == 4) {
+            message.reply('https://cdn.discordapp.com/attachments/912553636079489024/958684189178347600/Screenshot_20220331-000819_Discord.jpg')
+          }
         break;
       
     }
