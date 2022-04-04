@@ -29,7 +29,7 @@ function randomInt(min, max) { // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-let channels = ['912553636079489024', '954377814575022090', '949886919838433361']
+let channels = ['960068374799470642', '960134194141462528', '2']
 
 client.on('messageCreate', message => {
   if (!message.author.bot && channels.indexOf(message.channel.id) != -1) {
@@ -42,7 +42,8 @@ client.on('messageCreate', message => {
       case 'belle':
       case 'prep school belle':
       case 'npc belle':
-        var num = randomInt(1,3);
+      case 'belmo':
+        var num = randomInt(1,4);
         console.log(num);
           if (num == 1) {
             message.reply('https://media.discordapp.net/attachments/948493845950263307/954367048090259456/3D258F22-A305-4BA6-A7D4-9FC11D3A9C47.jpg?width=507&height=676')
@@ -52,6 +53,9 @@ client.on('messageCreate', message => {
           }
           else if (num == 3) {
             message.reply('https://media.discordapp.net/attachments/912553636079489024/959327260891029504/unknown.png')
+          }
+          else if (num == 4) {
+            message.reply('https://cdn.discordapp.com/attachments/912553636079489024/960013544668135474/unknown.png')
           }
         break;
 
@@ -91,17 +95,23 @@ client.on('messageCreate', message => {
         break;
       
       case 'kia':
-        var num = randomInt(1,2)
+        var num = randomInt(1,4)
         if (num == 1) {
           message.reply('https://cdn.discordapp.com/attachments/902345458393944065/957586958165618688/unknown.png')
         }
         else if (num == 2) {
           message.reply('https://cdn.discordapp.com/attachments/902345458393944065/957608618457452554/unknown.png')
         }
+        else if (num == 3) {
+          message.reply('https://media.discordapp.net/attachments/912553636079489024/959999033030619206/IMG_1845.png')
+        }
+        else if (num == 4) {
+          message.reply('https://media.discordapp.net/attachments/960134194141462528/960137594119790632/unknown.png')
+        }
         break;
 
       case 'hanyi':
-        var num = randomInt(1,4);
+        var num = randomInt(1,7);
         if (num == 1) {
           message.reply('https://www.cosgroves.com/resources/images/project/5a83b7fb56c90.jpeg');
         }
@@ -117,8 +127,21 @@ client.on('messageCreate', message => {
         else if (num == 4) {
           message.reply('https://cdn.discordapp.com/attachments/912553636079489024/958332238884372542/unknown.png')
         }
+        else if (num == 5) {
+          message.reply('https://cdn.discordapp.com/attachments/912553636079489024/959817530418016286/unknown.png')
+        }
+        else if (num == 6) {
+          message.reply('https://media.discordapp.net/attachments/912553636079489024/959818561231126528/unknown.png')
+        }
+        else if (num == 7) {
+          message.reply('https://media.discordapp.net/attachments/912553636079489024/959824624424722455/unknown.png')
+        }
         break;
 
+      case 'shaun':
+        message.reply('https://cdn.discordapp.com/attachments/912553636079489024/959818114659405824/unknown.png');
+        break;
+      
       case 'kate edger':
       case 'kate edgar':
         message.reply('You mean Korea town?');
@@ -127,30 +150,48 @@ client.on('messageCreate', message => {
       case 'andrew':
         message.reply('https://media.discordapp.net/attachments/912553636079489024/952152041663373342/Screen_Shot_2022-03-12_at_23.32.12.png')
         break;
-
+      
+      case 'jank':
+        message.reply('https://media.discordapp.net/attachments/912553636079489024/960133618645213245/unknown.png')
+        break;
+      
       case 'ash':
-        message.reply('https://cdn.discordapp.com/attachments/912553636079489024/957199411707015168/unknown.png');
+        var num = randomInt(1,3);
+        if (num == 1) {
+          message.reply('https://cdn.discordapp.com/attachments/912553636079489024/957199411707015168/unknown.png');
+        }
+        else if (num == 2) {
+          message.reply('https://cdn.discordapp.com/attachments/912553636079489024/959824699414700142/unknown.png');
+        }
+        else if (num == 3) {
+          message.reply('https://cdn.discordapp.com/attachments/959619268272590948/960036626858405970/unknown.png');
+        }
+        else if (num == 4) {
+          message.reply('https://media.discordapp.net/attachments/960068374799470642/960121732457439232/unknown.png');
+        }
         break;
 
       case 'coco':
-        message.reply('https://cdn.discordapp.com/attachments/902345458393944065/958218811310506024/unknown.png')
-        break;
-
-      case 'scarlet bet':
-        message.reply('https://cdn.discordapp.com/attachments/902345458393944065/957291755768791081/unknown.png');
+        message.reply('https://cdn.discordapp.com/attachments/902345458393944065/958218811310506024/unknown.png');
         break;
 
       case 'scarlet':
-        var num = randomInt(1,3);
+        var num = randomInt(1,5);
         console.log(num);
           if (num == 1) {
-            message.reply('https://cdn.discordapp.com/attachments/338668921022316544/778787103495421962/xMPkg06.gif')
+            message.reply('https://cdn.discordapp.com/attachments/338668921022316544/778787103495421962/xMPkg06.gif');
           }
           else if (num == 2) {
             message.reply('https://cdn.discordapp.com/attachments/912553636079489024/954354656191082506/unknown.png');
           }
           else if (num == 3) {
             message.reply('https://cdn.discordapp.com/attachments/902345458393944065/957234266255802428/unknown.png')
+          }
+          else if (num == 4) {
+            message.reply('https://media.discordapp.net/attachments/912553636079489024/959825899547684904/unknown.png')
+          }
+          else if (num == 5) {
+            message.reply('https://media.discordapp.net/attachments/912553636079489024/960036296062034010/unknown.png');
           }
         break;
       
@@ -183,8 +224,12 @@ client.on('messageCreate', message => {
           }
         break;
 
+      case 'fares':
+        message.reply('https://cdn.discordapp.com/attachments/959619268272590948/959619275897860096/unknown.png');
+        break;
+
       case 'zach1':
-        var num = randomInt(1,4);
+        var num = randomInt(1,5);
         console.log(num);
           if (num == 1) {
             message.reply('https://cdn.discordapp.com/attachments/912553636079489024/950031283684274206/Screen_Shot_2022-03-07_at_03.05.04.png')
@@ -197,6 +242,9 @@ client.on('messageCreate', message => {
           }
           else if (num == 4) {
             message.reply('https://cdn.discordapp.com/attachments/912553636079489024/958684189178347600/Screenshot_20220331-000819_Discord.jpg')
+          }
+          else if (num == 5) {
+            message.reply('https://cdn.discordapp.com/attachments/912553636079489024/960351343762079884/Screenshot_20220404-133313_Discord.jpg')
           }
         break;
       
