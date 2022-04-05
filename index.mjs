@@ -45,29 +45,37 @@ client.on('messageCreate', (message) => {
       case 'prep school belle':
       case 'npc belle':
       case 'belmo':
-        var num = randomInt(1,5);
+        var num = randomInt(1, 5);
         console.log(num);
-          if (num == 1) {
-            message.reply('https://media.discordapp.net/attachments/948493845950263307/954367048090259456/3D258F22-A305-4BA6-A7D4-9FC11D3A9C47.jpg?width=507&height=676')
-          }
-          else if (num == 2) {
-            message.reply('https://cdn.discordapp.com/attachments/948493845950263307/954369611195891722/395999F9-9C56-4BED-AEF8-5F077DA30B55.jpg')
-          }
-          else if (num == 3) {
-            message.reply('https://media.discordapp.net/attachments/912553636079489024/959327260891029504/unknown.png')
-          }
-          else if (num == 4) {
-            message.reply('https://cdn.discordapp.com/attachments/912553636079489024/960013544668135474/unknown.png')
-          }
-          else if (num == 5) {
-            message.reply('https://cdn.discordapp.com/attachments/959619268272590948/960741509106397224/unknown.png')
-          }
+        if (num == 1) {
+          message.reply(
+            'https://media.discordapp.net/attachments/948493845950263307/954367048090259456/3D258F22-A305-4BA6-A7D4-9FC11D3A9C47.jpg?width=507&height=676'
+          );
+        } else if (num == 2) {
+          message.reply(
+            'https://cdn.discordapp.com/attachments/948493845950263307/954369611195891722/395999F9-9C56-4BED-AEF8-5F077DA30B55.jpg'
+          );
+        } else if (num == 3) {
+          message.reply(
+            'https://media.discordapp.net/attachments/912553636079489024/959327260891029504/unknown.png'
+          );
+        } else if (num == 4) {
+          message.reply(
+            'https://cdn.discordapp.com/attachments/912553636079489024/960013544668135474/unknown.png'
+          );
+        } else if (num == 5) {
+          message.reply(
+            'https://cdn.discordapp.com/attachments/959619268272590948/960741509106397224/unknown.png'
+          );
+        }
         break;
-        
+
       case 'jo':
-        message.reply('https://media.discordapp.net/attachments/960068374799470642/960083590656434217/unknown.png')
+        message.reply(
+          'https://media.discordapp.net/attachments/960068374799470642/960083590656434217/unknown.png'
+        );
         break;
-        
+
       case 'belle curve':
         //message.reply('https://cdn.discordapp.com/attachments/912553636079489024/956885208005767229/Screen_Shot_2022-03-26_at_01.00.06.png')
         message.reply(
@@ -185,12 +193,15 @@ client.on('messageCreate', (message) => {
 
       case 'andrew':
       case 'goofy':
-        var num = randomInt(1,2);
+        var num = randomInt(1, 2);
         if (num == 1) {
-          message.reply('https://media.discordapp.net/attachments/912553636079489024/952152041663373342/Screen_Shot_2022-03-12_at_23.32.12.png')
-        }
-        else if (num == 2) {
-          message.reply('https://media.discordapp.net/attachments/960068374799470642/960726200022622268/unknown.png?width=1440&height=188')
+          message.reply(
+            'https://media.discordapp.net/attachments/912553636079489024/952152041663373342/Screen_Shot_2022-03-12_at_23.32.12.png'
+          );
+        } else if (num == 2) {
+          message.reply(
+            'https://media.discordapp.net/attachments/960068374799470642/960726200022622268/unknown.png?width=1440&height=188'
+          );
         }
         break;
 
@@ -299,7 +310,7 @@ client.on('messageCreate', (message) => {
         break;
 
       case 'zach1':
-        var num = randomInt(1, 5);
+        var num = randomInt(1, 6);
         console.log(num);
         if (num == 1) {
           message.reply(
