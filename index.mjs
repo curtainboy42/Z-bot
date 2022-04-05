@@ -266,7 +266,7 @@ client.on('messageCreate', (message) => {
           );
         } else if (num == 2) {
           message.reply(
-            'https://cdn.discordapp.com/attachments/844824881786912779/960799845302538240/unknown.png'
+            'https://cdn.discordapp.com/attachments/844824881786912779/960802342226264084/unknown.png'
           );
         }
         break;
@@ -314,7 +314,12 @@ client.on('messageCreate', (message) => {
           message.reply(
             'https://cdn.discordapp.com/attachments/912553636079489024/960351343762079884/Screenshot_20220404-133313_Discord.jpg'
           );
+        } else if (num == 6) {
+          message.reply(
+            'https://media.discordapp.net/attachments/960068374799470642/960734765525401650/Screenshot_20220405-145650_Discord.jpg?width=388&height=104'
+          );
         }
+
         break;
     }
     switch (author) {
